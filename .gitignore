@@ -230,6 +230,11 @@ __marimo__/
 # **/ also covers a copy inside a subfolder, such as projects/mp1/.claude/.
 **/.claude/settings.local.json
 
+# Variants of .env, such as .env.local, hold keys too. An example file with no real
+# values in it, .env.example, can still be committed.
+.env.*
+!.env.example
+
 # A DuckDB database is made again by the code that builds it, so it stays out of git.
 # The pattern also covers the .wal file DuckDB writes beside it.
 *.duckdb*
